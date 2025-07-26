@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class Vibes Ultimate</title>
+  <link rel="stylesheet" href="mood.css" />
+</head>
+<body>
+ <header class="header">
+    <h1>Welcome to Class Vibes!</h1>
+ </header>
+  <p>Select your current mood anonymously:</p>
+  <div class="emoji-buttons">
+    <button class="emoji-btn happy" id="MyButtons" onclick="voteMood('happy')">😊</button>
+    <button class="emoji-btn neutral" id="MyButtons"  onclick="voteMood('neutral')">😐</button>
+    <button class="emoji-btn sad" id="MyButtons" onclick="voteMood('sad')">🥺</button>
+    <button class="emoji-btn angry" id="MyButtons" onclick="voteMood('angry')">😡</button>
+    <button class="emoji-btn excited" id="MyButtons"  onclick="voteMood('excited')">🥳</button>
+  </div>
+  <canvas id="moodChart" width="400" height="200"></canvas>
+  <footer>Thank you for visiting. Your mood matters!</footer>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="mood.js"></script>
+</body>
+</html>
